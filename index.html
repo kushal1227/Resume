@@ -3028,7 +3028,7 @@
                     </div>
                     <textarea id="pg-code" spellcheck="false">{% assign product_title = "Organic Baby Serum" %}
 {% assign price = 24.99 %}
-{% assign vendor = "BabyOrgano" %}
+{% assign vendor = "Derma" %}
 {% assign in_stock = true %}
 {% assign tags = "organic, baby, serum, natural" %}
 
@@ -3079,7 +3079,7 @@ Slug: {{ product_title | handleize }}</textarea>
             <div class="exp-grid">
                 <div class="exp-card revL">
                     <div class="exp-top">
-                        <div class="exp-emo"><img src="Images/CX.png" alt="BabyOrgano"></div>
+                        <div class="exp-emo"><img src="Images/CX.png" alt="Cypherox Technologies"></div>
                         <span class="exp-badge badge-now">● Current</span>
                     </div>
                     <div class="exp-co">Cypherox Technologies</div>
@@ -3487,7 +3487,7 @@ Slug: {{ product_title | handleize }}</textarea>
         });
 
         /* ── TICKER ── */
-        var tickItems = ['Shopify OS 2.0', 'Liquid Templating', 'Metafields', 'Metaobjects', 'Dawn Theme', 'JSON Templates', 'DTC eCommerce', 'Core Web Vitals', 'Page Speed 97+', 'Custom Sections', 'Schema Settings', 'Shopify Flow', 'Responsive Design', 'CRO Optimization', 'BabyOrgano', 'Alian Software'];
+        var tickItems = ['Shopify OS 2.0', 'Liquid Templating', 'Metafields', 'Metaobjects', 'Dawn Theme', 'JSON Templates', 'DTC eCommerce', 'Core Web Vitals', 'Page Speed 97+', 'Custom Sections', 'Schema Settings', 'Shopify Flow', 'Responsive Design', 'CRO Optimization', 'Cypherox Technologies', 'Alian Software'];
         var tickerEl = document.getElementById('tickerInner');
         if (tickerEl) {
             var h = '';
@@ -3532,7 +3532,7 @@ Slug: {{ product_title | handleize }}</textarea>
 
         /* ── LIQUID PLAYGROUND ── */
         var PRESETS = {
-            product: '{% assign product_title = "Organic Baby Serum" %}\n{% assign price = 24.99 %}\n{% assign vendor = "BabyOrgano" %}\n{% assign in_stock = true %}\n{% assign tags = "organic, baby, serum, natural" %}\n\n{% if in_stock %}\n  {{ product_title }} — Available\n{% else %}\n  {{ product_title }} — Out of Stock\n{% endif %}\n\n{% assign tag_array = tags | split: ", " %}\n{% for tag in tag_array %}\n  #{{ tag }}\n{% endfor %}\n\nPrice: ${{ price | round: 2 }}\nVendor: {{ vendor | upcase }}\nSlug: {{ product_title | handleize }}',
+            product: '{% assign product_title = "Organic Baby Serum" %}\n{% assign price = 24.99 %}\n{% assign vendor = "Derma" %}\n{% assign in_stock = true %}\n{% assign tags = "organic, baby, serum, natural" %}\n\n{% if in_stock %}\n  {{ product_title }} — Available\n{% else %}\n  {{ product_title }} — Out of Stock\n{% endif %}\n\n{% assign tag_array = tags | split: ", " %}\n{% for tag in tag_array %}\n  #{{ tag }}\n{% endfor %}\n\nPrice: ${{ price | round: 2 }}\nVendor: {{ vendor | upcase }}\nSlug: {{ product_title | handleize }}',
             metafield: '{% assign metafield_ingredients = "Aloe Vera, Vitamin C, Jojoba Oil" %}\n{% assign metafield_age_range = "0-12 months" %}\n{% assign metafield_is_organic = true %}\n\n== Product Metafields ==\nIngredients: {{ metafield_ingredients }}\nAge Range:   {{ metafield_age_range }}\n\n{% if metafield_is_organic %}\nCertified Organic: Yes\n{% endif %}\n\n{% assign ingredient_list = metafield_ingredients | split: ", " %}\n{% for ingredient in ingredient_list %}\n  * {{ ingredient }}\n{% endfor %}',
             loop: '{% assign collection_title = "Baby Skincare" %}\n{% assign products = "Serum,Lotion,Body Wash,Shampoo,Sunscreen" %}\n{% assign product_list = products | split: "," %}\n\n== {{ collection_title }} Collection ==\nTotal Products: {{ product_list | size }}\n\n{% for product in product_list %}\n  {{ forloop_index }}. {{ product | strip | upcase }}\n{% endfor %}',
             filter: '{% assign title = "baby organic serum v2" %}\n{% assign price = 24.9900 %}\n{% assign description = "  Natural skincare for babies  " %}\n\nCapitalize:  {{ title | capitalize }}\nUpcase:      {{ title | upcase }}\nHandleize:   {{ title | handleize }}\nStrip:       |{{ description | strip }}|\nTruncate 20: {{ title | truncate: 20 }}\nPrice:       ${{ price | round: 2 }}\nPlus 10:     ${{ price | plus: 10 | round: 2 }}\nTimes 3:     ${{ price | times: 3 | round: 2 }}',
